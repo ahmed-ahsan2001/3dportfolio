@@ -24,7 +24,7 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.7 : 0.9}
+        scale={isMobile ? 0.4 : 0.9}
         position={isMobile ? [0, -1, -2.2] : [0, -1.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -53,12 +53,12 @@ const ComputersCanvas = () => {
   return (
     <Box
       ref={ref}
-      height={"70%"}
+      height={"35%"}
       px={{ xs: Constants.mainPaddingXs, md: Constants.mainPaddingMd }}
     >
       {inView && (
         <Canvas
-          camera={{ position: [20, 3, 5], fov: 25 }}
+          camera={{ position: [10, 3, 5], fov: 25 }}
           gl={{ preserveDrawingBuffer: true }}
         >
           <Suspense fallback={<CanvasLoader />}>

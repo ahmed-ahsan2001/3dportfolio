@@ -23,7 +23,7 @@ const Intro = () => {
           <MotionTypography
             // variant="h3"
             fontWeight="bold"
-            fontSize={40}
+            fontSize={30}
             initial={{ opacity: 0, x: -50 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}

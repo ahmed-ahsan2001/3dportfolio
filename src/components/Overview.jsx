@@ -31,7 +31,7 @@ const Overview = () => {
           <MotionTypography
             ref={ref}
             mb={1}
-            fontSize={10}
+            fontSize={15}
             color={Colors.grey}
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { x: 0, opacity: 1 } : {}}
